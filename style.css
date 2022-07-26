@@ -3,125 +3,135 @@
   padding: 0;
 }
 
+/* BIG BLOCKS */
+/* Is this bad practice? I feel like it is. */
+body {
+  background-color: #1d1d1d;
+}
+
 .container {
-  background-color: #9db7ffb6;
+  background-color: #383838b6;
+  font-family: Montserrat;
+  height: 550px;
   width: 300px;
-  border-color: black;
-  border-radius: 20px;
-  padding: 50px;
-  margin: 50px auto;
-  text-align: left;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 35px auto;
   position: relative;
 }
 
 .part1 {
-  font-size: 26px;
-  font-weight: 120;
-  height: 40px;
-  width: 100%;
+  font-size: 30px;
+  font-family: inherit;
+  font-weight: bold;
+  color: #fff;
+  height: 60px;
+  width: 292px;
+  background: #525252;
+  border-color: #525252;
 
+  padding-left: 6px;
+  margin-top: 10px;
   margin-bottom: 8px;
-  border-radius: 12px;
+  border-radius: inherit;
   border-style: solid;
 }
 
-.operatorField {
-  text-align: center;
-  margin: 4px auto;
-  font-size: 26px;
-  font-weight: 120;
-  height: 40px;
-  width: 50%;
-
-  margin-left: 75px;
-  margin-bottom: 8px;
-  border-radius: 12px;
-  border-style: solid;
-}
-
-.part2 {
-  font-size: 26px;
-  font-weight: 120;
-  height: 40px;
-  width: 100%;
-
-  margin-bottom: 8px;
-  border-radius: 12px;
-  border-style: solid;
+.part1:focus {
+  outline: none;
 }
 
 .deadspace {
-  height: 20px;
+  background-color: #808080;
+  width: 300px;
+  height: 2px;
+  margin-top: 25px;
+  margin-bottom: 8px;
 }
 
-button {
-  font-size: 24px;
-  color: #ffffff;
-  height: 55px;
-  width: 40px;
-
-  border-style: solid;
-  border-radius: 5px;
-  border-width: 1px;
-  margin: 2px;
-  background-color: #a8a7a7;
-}
-
-button:hover {
-  background-color: #8f8f8f;
-}
-
-button:active {
-  background-color: #525252;
-}
-
-.operators {
-  background-color: rgb(36, 204, 112);
-}
-.operators:hover {
-  background-color: rgb(27, 196, 112);
-}
-.operators:active {
-  background-color: rgb(23, 160, 76);
-}
-
-.clear {
-  background-color: #ff9f46;
-}
-
-.clear:hover {
-  background-color: #dd8b3e;
-}
-
-.clear:active {
-  background-color: #c57b37;
-}
-
-.equal {
-  height: 115px;
-  position: absolute;
-  right: 164px;
-  background-color: #75b1ff;
-}
-
-.equal:hover {
-  background-color: #6598db;
-}
-
-.equal:active {
-  background-color: #5682bb;
-}
-
-.space {
-  text-align: center;
-  width: 40px;
-  line-height: 55px;
-  margin: 2px;
+.buttons {
   display: inline-block;
-  /* margin: 2px; */
+  position: absolute;
+  width: 300px;
+  margin-left: 18px;
 }
 
 .make-block {
   display: inline-block;
   width: auto;
+}
+
+/* BUTTONS IN GENERAL */
+
+button {
+  font-size: 24px;
+  font-family: inherit;
+  color: #fff;
+
+  height: 75px;
+  width: 55px;
+
+  border-color: #444;
+  border-style: solid;
+  border-radius: 12px;
+  border-width: 1px;
+
+  margin: 3px;
+  background-color: #444;
+}
+
+button:hover {
+  background-color: #8f8f8f;
+  border-color: #8f8f8f;
+}
+
+button:active {
+  background-color: #525252;
+  border-color: #525252;
+}
+
+/* OPERATORS */
+
+.operators {
+  color: #24cc70;
+  border-color: #24cc70;
+}
+
+/* BACKSPACE */
+
+.backspace {
+  color: #ff9f46;
+  border-color: #ff9f46;
+}
+
+/* CLEAR ALL */
+
+.clear {
+  color: #ee4343;
+  border-color: #ee4343;
+}
+
+/* EQUAL SIGN */
+
+.equal {
+  border-color: #75b1ff;
+  height: 156px;
+  position: absolute;
+  right: 44px;
+}
+
+/* PARENTHESES */
+
+.parenthesis {
+  margin: 2px;
+  width: 24px;
+}
+
+.open {
+  margin-right: 1px;
+  margin-left: 3px;
+}
+
+.close {
+  margin-right: 3px;
 }
