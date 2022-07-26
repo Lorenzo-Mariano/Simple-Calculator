@@ -11,9 +11,9 @@ numberButton.forEach(button => {
     button.addEventListener('click', () => {
         if (!operatorField.value) {
             part1.value += button.innerText
-        } else {
-            part2.value += button.innerText
+            return;
         }
+        part2.value += button.innerText
     });
 });
 
@@ -35,11 +35,4 @@ function calculate(top, operator, bottom) {
     inputValue = `${top.value} ${operator.value} ${bottom.value}`
     console.log(eval(inputValue))
 }
-
-// function typeNum() {
-
-// }
-
-
-
 
