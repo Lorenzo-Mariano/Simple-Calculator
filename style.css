@@ -20,7 +20,7 @@ body {
   position: relative;
 }
 
-.part1 {
+.input-field {
   font-size: 30px;
   font-family: inherit;
   font-weight: bold;
@@ -41,7 +41,7 @@ body {
   outline: none;
 }
 
-.deadspace {
+.separator {
   background-color: #808080;
   width: 300px;
   height: 2px;
