@@ -1,5 +1,4 @@
 let userInput = document.querySelector('.user-input')
-let part2 = document.querySelector('.part2')
 let operatorField = document.querySelector('.operatorField')
 let numberButton = document.querySelectorAll('.num')
 let operatorButton = document.querySelectorAll('.operators')
@@ -17,7 +16,7 @@ operatorButton.forEach(button => {
     button.addEventListener('click', () => userInput.value += ` ${button.innerHTML} `);
 });
 
-// how do i make it do the flashing line thing as i type?
+
 backspace.addEventListener('click', () => userInput.value = userInput.value.slice(0, userInput.value.length - 1))
 
 clearButton.addEventListener('click', () => userInput.value = '')
