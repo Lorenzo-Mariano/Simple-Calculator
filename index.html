@@ -9,54 +9,52 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
     </style>
-    <title>El JavaScript Calculatorito</title>
+    <title>El Flexbox Grid Calculatorito</title>
   </head>
 
   <body>
     <div class="background">
       <div class="container">
-        <input class="part1" readonly>
-        <div class="deadspace"></div>
-        <div class="buttons">
-          <div>
-            <button class="operators">+</button>
-            <button class="operators">-</button>
-            <button class="operators">*</button>
-            <button class="operators">/</button>
-          </div>
 
-          <div>
-            <button class="num">7</button>
-            <button class="num">8</button>
-            <button class="num">9</button>
-            <button class="backspace">&larr;</button>
-          </div>
-
-          <div class="make-block">
-            <button class="num">4</button>
-            <button class="num">5</button>
-            <button class="num">6</button>
-            <button class="clear">CE</button>
-          </div>
-
-          <div class="make-block">
-            <button class="num">1</button>
-            <button class="num">2</button>
-            <button class="num">3</button>
-            <button class="equal">=</button>
-          </div>
-
-          <!-- below is not dead code -->
-          <div></div>
-
-          <div>
-            <button class="parenthesis open">(</button>
-            <button class="parenthesis close">)</button>
-            <button class="num">0</button>
-            <button class="num">.</button>
-          </div>
+        <div class="input-space">
+          <input class="user-input" readonly>
+          <div class="deadspace"></div>
         </div>
 
+        <div class="buttons">
+
+          <button class="operators row one">+</button>
+          <button class="operators row one">-</button>
+          <button class="operators row one">*</button>
+          <button class="operators row one">/</button>
+
+          <button class="num row two">7</button>
+          <button class="num row two">8</button>
+          <button class="num row two">9</button>
+          <button class="backspace row two">&larr;</button>
+
+          <button class="num row three">4</button>
+          <button class="num row three">5</button>
+          <button class="num row three">6</button>
+          <button class="clear row three">CE</button>
+
+          <button class="num row four">1</button>
+          <button class="num row four">2</button>
+          <button class="num row four">3</button>
+          <button class="equal row four">=</button>
+
+          <!-- below is not dead code -->
+          <!-- <div></div> -->
+
+          <div>
+            <button class="parenthesis open row five">(</button>
+            <button class="parenthesis close row five">)</button>
+          </div>
+
+          <button class="num row five">0</button>
+          <button class="num row five">.</button>
+
+        </div>
 
       </div>
   </body>
